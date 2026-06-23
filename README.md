@@ -1,15 +1,15 @@
-# @prism/protocol
+# @sudo-ping-pong/prism-protocol
 
 Shared **TypeScript wire protocol** for [Prism DevTools](https://github.com/sudo-ping-pong/prism-expo-client) — types and helpers for envelopes, WebSocket messages, connect URIs, Redux commands, and session export/import.
 
-Used by `@prism/expo-client`, `@prism/server`, and the Prism macOS desktop app.
+Used by [`@sudo-ping-pong/prism-expo-client`](https://github.com/sudo-ping-pong/prism-expo-client) and the Prism macOS desktop app.
 
 ## Install
 
 ```bash
-npm install @prism/protocol
+npm install @sudo-ping-pong/prism-protocol
 # or
-pnpm add @prism/protocol
+pnpm add @sudo-ping-pong/prism-protocol
 ```
 
 ## Overview
@@ -30,7 +30,7 @@ import {
   createEnvelope,
   PRISM_PROTOCOL_VERSION,
   type NetworkPayload,
-} from '@prism/protocol';
+} from '@sudo-ping-pong/prism-protocol';
 
 const payload: NetworkPayload = {
   method: 'GET',
@@ -73,7 +73,7 @@ PrismEnvelope<NetworkPayload | LogPayload | StatePayload | PerformancePayload>
 ## Connect URI (QR / deep link)
 
 ```ts
-import { encodePrismConnectUri, parsePrismConnectUri } from '@prism/protocol';
+import { encodePrismConnectUri, parsePrismConnectUri } from '@sudo-ping-pong/prism-protocol';
 
 encodePrismConnectUri({ port: 8080, host: '192.168.1.100' });
 // prism://connect?port=8080&host=192.168.1.100
@@ -89,7 +89,7 @@ import {
   createPrismSession,
   serializePrismSession,
   validatePrismSessionImport,
-} from '@prism/protocol';
+} from '@sudo-ping-pong/prism-protocol';
 
 const session = createPrismSession({
   network: [],
@@ -105,7 +105,7 @@ const result = validatePrismSessionImport(json);
 ## Type guards & helpers
 
 ```ts
-import { isPrismEnvelope, isPrismCommand, generateId } from '@prism/protocol';
+import { isPrismEnvelope, isPrismCommand, generateId } from '@sudo-ping-pong/prism-protocol';
 ```
 
 ## Constants
@@ -126,7 +126,7 @@ import { isPrismEnvelope, isPrismCommand, generateId } from '@prism/protocol';
 
 ## Related packages
 
-- [`@prism/expo-client`](https://www.npmjs.com/package/@prism/expo-client) — Expo/RN SDK (depends on this package)
+- [`@sudo-ping-pong/prism-expo-client`](https://www.npmjs.com/package/@sudo-ping-pong/prism-expo-client) — Expo/RN SDK (depends on this package)
 
 ## License
 

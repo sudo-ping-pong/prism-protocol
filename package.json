@@ -1,6 +1,6 @@
 {
-  "name": "@prism/protocol",
-  "version": "0.1.0",
+  "name": "@sudo-ping-pong/prism-protocol",
+  "version": "0.1.1",
   "description": "Shared protocol types for Prism DevTools",
   "license": "MIT",
   "type": "module",
@@ -15,13 +15,12 @@
   "files": ["dist"],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/prism-devtools/prism.git",
-    "directory": "packages/prism-protocol"
+    "url": "git+https://github.com/sudo-ping-pong/prism-protocol.git"
   },
   "bugs": {
-    "url": "https://github.com/prism-devtools/prism/issues"
+    "url": "https://github.com/sudo-ping-pong/prism-protocol/issues"
   },
-  "homepage": "https://github.com/prism-devtools/prism#readme",
+  "homepage": "https://github.com/sudo-ping-pong/prism-protocol#readme",
   "keywords": [
     "prism",
     "devtools",
